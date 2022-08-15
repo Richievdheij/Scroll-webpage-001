@@ -79,14 +79,14 @@ ul li a {
 }
 
 ul li a:hover {
-    background: #333;
     text-decoration: none;
     color: #fff;
     /* 'Navigation bar' animated button */
-    background: linear-gradient(45deg, #ffffff, #888888, #ffffff) center no-repeat;
-    background-size: 1500% auto;
-    animation: change 20s ease-in-out infinite;
-    transition: all 800ms ease-in-out;
+    background: linear-gradient(45deg, #9292927c, #dfdfdf42, #9292927c) center no-repeat;
+    background-size: 700%;
+    animation: change 10s ease-in-out infinite;
+    transition: all 500ms ease-in-out;
+    text-shadow: hwb(0 0% 100% / 0.6) 3px 3px 2px;
 }
 
 #home {
