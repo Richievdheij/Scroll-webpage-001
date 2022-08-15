@@ -22,17 +22,33 @@
 }
 
 .text-content h1 {
+    height: 60vh;
     font-size: 100px;
     font-weight: bold;
-    /color: #fff;  /* Title color */
-    font-family: bignoodletitling; /* aaaa */
+    color: #fff;                                  /* Title color */
+    font-family: bignoodletitling;                  /* aaaa */
     letter-spacing: 5px;
 }
 
+#home h1 { /* Exclusive home title edit */
+    height: 55vh;
+    font-size: 150px;
+    font-weight: bold;
+    color: #fff;                                  /* Title color */
+    font-family: bignoodletitling;                  /* aaaa */
+    letter-spacing: 5px;
+}
+
+#home p { /* Exclusive text title edit */
+    font-family: arial;
+    line-height: 25px;
+    color: #fff;                                  /* text color */
+}
+
 .text-content p {
-    font-family: merienda;
-    line-height: 35px;
-    /color: #fff; /* Title color */
+    font-family: arial;
+    line-height: 30px;
+    color: #fff;                                  /* text color */
 }
 
 ul {
@@ -66,6 +82,11 @@ ul li a:hover {
     background: #333;
     text-decoration: none;
     color: #fff;
+    /* 'Navigation bar' animated button */
+    background: linear-gradient(45deg, #ffffff, #888888, #ffffff) center no-repeat;
+    background-size: 1500% auto;
+    animation: change 20s ease-in-out infinite;
+    transition: all 800ms ease-in-out;
 }
 
 #home {
@@ -73,38 +94,51 @@ ul li a:hover {
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
-    /* 'Home' animated background */
+    /* 'Home' animated decal */
     background: linear-gradient(45deg, #ee76526c, #e73c7e7e, #23a5d585, #23d5ab94);     /* Change color */
-    background-size: 400% 400%;
-    animation: change 20s ease-in-out infinite;
+    background-size: 200% 200%;
+    animation: change 15s ease-in-out infinite;
+    }
+    
+@keyframes change {
+    0%{
+        background-position:0% 50%;
+    }
+    50%{
+        background-position:100% 50%;
+    }
+    100%{
+        background-position:0% 50%;
+    }
 }
 
 #about {
-    background-color: goldenrod;
+    background-color: #969696;
 }
 
-#portfolio {
+#team {
     background-image: url(3.jpg);  /* Third page background thumbnail */
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
-    /* 'Portfolio' animated background */
+    /* 'Team' animated decal */
     background: linear-gradient(45deg, #ee76526c, #e73c7e7e, #23a5d585, #23d5ab94);     /* Change color */
-    background-size: 400% 400%;
-    animation: change 20s ease-in-out infinite;
-}
-
-#services {
-    background-color: goldenrod;
+    background-size: 200% 200%;
+    animation: change 15s ease-in-out infinite;
+    }
+    
+@keyframes change {
+    0%{
+        background-position:0% 50%;
+    }
+    50%{
+        background-position:100% 50%;
+    }
+    100%{
+        background-position:0% 50%;
+    }
 }
 
 #contact {
-    background-image: url(5.jpg);  /* Fifth page background thumbnail */
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center center;
-    /* 'Contact' animated background */
-    background: linear-gradient(45deg, #ee76526c, #e73c7e7e, #23a5d585, #23d5ab94);     /* Change color */
-    background-size: 400% 400%;
-    animation: change 20s ease-in-out infinite;
+    background-color: #969696;
 }
